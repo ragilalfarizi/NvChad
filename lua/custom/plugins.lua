@@ -57,6 +57,23 @@ local plugins = {
       dofile(vim.g.base46_cache .. "git")
     end,
   },
+
+  -- cutlass
+  {
+    "gbprod/cutlass.nvim",
+    event = "BufReadPost",
+    opts = {
+      cut_key = "x",
+      override_del = true,
+      exclude = {},
+      registers = {
+        select = "_",
+        delete = "_",
+        change = "_",
+      },
+    },
+  },
+
 }
 
 return plugins
