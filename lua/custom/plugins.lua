@@ -34,12 +34,27 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
--- Add new plugins below
+  -- Add new plugins below
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
     config = function()
       require("better_escape").setup()
+    end,
+  },
+
+  -- code action menu
+  {
+
+    "weilbith/nvim-code-action-menu",
+    cmd = "CodeActionMenu",
+    init = function()
+      vim.g.code_action_menu_show_details = true
+      vim.g.code_action_menu_show_diff = true
+      vim.g.code_action_menu_show_action_kind = true
+    end,
+    config = function()
+      dofile(vim.g.base46_cache .. "git")
     end,
   },
 }
