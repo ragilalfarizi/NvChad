@@ -132,6 +132,14 @@ local plugins = {
       }
     end,
   },
+
+  -- Lazygit
+  -- TODO: add mappings
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = "LazyGit",
+  },
+
 }
 
 return plugins
