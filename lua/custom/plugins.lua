@@ -86,6 +86,18 @@ local plugins = {
       },
     },
   },
+
+  -- hlargs
+   {
+    "m-demare/hlargs.nvim",
+    event = "BufWinEnter",
+    config = function()
+      require("hlargs").setup {
+        hl_priority = 200,
+      }
+    end,
+  },
+
 }
 
 return plugins
