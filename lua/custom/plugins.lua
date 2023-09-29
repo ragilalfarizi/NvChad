@@ -1,7 +1,7 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 local plugins = {
-   {
+  {
     "neovim/nvim-lspconfig",
     dependencies = {
       -- format & linting
@@ -21,7 +21,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -74,6 +74,18 @@ local plugins = {
     },
   },
 
+  -- diffview
+  -- TODO: Learn diffview.
+  --       if possible add mappings
+  {
+    "lewis6991/gitsigns.nvim",
+    dependencies = {
+      {
+        "sindrets/diffview.nvim",
+        config = true,
+      },
+    },
+  },
 }
 
 return plugins
