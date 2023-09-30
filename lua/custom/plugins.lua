@@ -75,8 +75,6 @@ local plugins = {
   },
 
   -- diffview
-  -- TODO: Learn diffview.
-  --       if possible add mappings
   {
     "lewis6991/gitsigns.nvim",
     dependencies = {
@@ -134,7 +132,6 @@ local plugins = {
   },
 
   -- Lazygit
-  -- TODO: add mappings
   {
     "kdheepak/lazygit.nvim",
     cmd = "LazyGit",
@@ -158,6 +155,7 @@ local plugins = {
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
