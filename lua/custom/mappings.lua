@@ -6,7 +6,6 @@ M.lspconfig = {
   },
 }
 
--- WARNING: Mapping conflicts with close buffer
 M.trouble = {
   n = {
     ["<leader>xx"] = {
@@ -53,4 +52,21 @@ M.trouble = {
   },
 }
 
+M.TODO = {
+  n = {
+    ["]t"] = {
+      function()
+        require("todo-comments").jump_next()
+      end,
+      "Next todo comments",
+    },
+
+    ["[t"] = {
+      function()
+        require("todo-comments").jump_prev()
+      end,
+      "Prev todo comments",
+    },
+  },
+}
 return M
