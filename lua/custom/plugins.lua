@@ -140,6 +140,12 @@ local plugins = {
     cmd = "LazyGit",
   },
 
+  -- Symbols outline
+  {
+    "simrat39/symbols-outline.nvim",
+    cmd = "SymbolsOutline",
+    config = true,
+  },
 }
 
 return plugins
