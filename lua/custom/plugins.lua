@@ -146,6 +146,13 @@ local plugins = {
     cmd = "SymbolsOutline",
     config = true,
   },
+
+  -- Trouble
+  {
+    "folke/trouble.nvim",
+    cmd = { "Trouble", "TroubleToggle" },
+    config = true, -- Todo: change when base46 has colors? for this
+  },
 }
 
 return plugins
