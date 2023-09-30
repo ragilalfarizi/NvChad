@@ -153,6 +153,17 @@ local plugins = {
     cmd = { "Trouble", "TroubleToggle" },
     config = true, -- Todo: change when base46 has colors? for this
   },
+
+  -- TODO-comments
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
 }
 
 return plugins
